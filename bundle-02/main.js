@@ -130,28 +130,28 @@ checkAccess();
     }
     checkAccessImproved();*/
 
-function checkAccessImproved() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
-
-    let grantAccess = "false";
-
-    for (let i = 0; i < addresses.length; i++) {
-        const email = addresses[i];
-
-        if (userEmail.length > 5) {
-            if (email === userEmail) {
-                grantAccess = "true";
+    function checkAccessImproved() {
+        const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    
+        const userEmail = prompt('Inserisci il tuo indirizzo email');
+    
+        let grantAccess = false;
+    
+        for (let i = 0; i < addresses.length; i++) {
+            const email = addresses[i];
+    
+            if (userEmail.length > 5) {
+                if (email === userEmail) {
+                    grantAccess = true;
+                }
             }
+        } if (grantAccess) {
+            console.log('Accesso consentito!');
+        } else {
+            console.log('Accesso negato!');
         }
-    } if (grantAccess) {
-        console.log('Accesso consentito!');
-    } else {
-        console.log('Accesso negato!');
     }
-}
-checkAccessImproved();
+    checkAccessImproved();
 
 
 
