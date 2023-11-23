@@ -4,18 +4,18 @@
 
 1. Questo codice ha un ciclo for, stampa in console i numeri da 0 a 4.
 
-2. Si, bisogna sostituire "i > 5" con "i < 5" senno il ciclo for non viene mai eseguito, perchè se i = 0 non sarà mai maggiore di 5 quindi usciremo subito dal ciclo.
+2. Si la sintassi è giusta.
 
-3. Corregendo l'errore, la logica è giusta.
+3. Si, bisogna sostituire "i > 5" con "i < 5" senno il ciclo for non viene mai eseguito, perchè se i = 0 non sarà mai maggiore di 5 quindi usciremo subito dal ciclo.
 
 
 ## Esercizio 2 
 
 1. Questa è una funzione dove passato un numero come argomento, se il numero è pari ci restituisce il numero + 5, se è dispari ci restituisce in numero inserito.
 
-2.  Si, nella condizione If "(num % 2 = 0)" va sostituito con "(num % 2 === 0)" Perche bisogna fare un confronto, non riassegnare un valore.
+2. Si, la sintassi è giusta.
 
-3. Correggendo l'errore, la logica è giusta.
+3. Si, nella condizione If "(num % 2 = 0)" va sostituito con "(num % 2 === 0)" Perche bisogna fare un confronto, non riassegnare un valore
 
 ## Esercizio 3 
 
@@ -50,7 +50,7 @@
 
 2. Si, bisogna sostituire const con let nella variabile message, perchè il suo valore in base a determinate condizioni varia. Le variabili assegnante con const non posso variare. 
 
-3. Si, bisogna aggiungere un console.log() oppure visualizzarlo nel DOM senno la variabile message non viene mai letta. 
+3. Si, bisogna aggiungere un console.log() oppure return per  visualizzarlo nel DOM senno la variabile message non viene mai letta. 
 
 
 ## Esecizio 2 
@@ -86,3 +86,15 @@
 2. Si mancava una parentesi "}" che chiudeva la funzione.
 
 3. Si le condizioni if e else vanno messe fuori il ciclo for, in modo che dopo che sia avvenuto il ciclo, controlliamo se l'email è presente o meno, Sennò per ogni ciclo avremmo una controllo. 
+
+# Bundle-3
+
+# Esercizio 3
+
+1. Questa è una funzione che tramite un array di oggetti, stampa in console, il tipo di auto.
+
+2. Si Manca "," prima dell ultima "{" dell oggetto. 
+
+3. Si Manca il return al secondo ".filter"
+    Aggiungiamo anche ".toLowerCase" al ".type" in modo che se i dati sono con maiuscole o minuscole, non ci dia errore.
+    Bisogna sostituire "||" l'operatore "or" ma aggiungingiamo "&&" l'operatore and
