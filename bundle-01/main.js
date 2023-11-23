@@ -11,30 +11,48 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+/*for (let i = 0; i > 5; i++) {
+    console.log(i);
+}*/
+
+for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
-
 // ESERCIZIO 2
-function addIfEven(num) {
+/* function addIfEven(num) {
     if (num % 2 = 0) {
         return num + 5;
     }
     return num;
+}*/
+
+function addIfEven(num) {
+    if (num % 2 === 0) {
+        return num + 5;
+    }
+    return num;
 }
+console.log(addIfEven(3))
+
+
 
 
 // ESERCIZIO 3
-function loopToFive() {
+/* function loopToFive() {
     for (let i = 0, i < 5, i++) {
         console.log(i);
     }
+}*/
+function loopToFive() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
 }
-
+loopToFive()
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
-function displayEvenNumbers() {
+/* function displayEvenNumbers() {
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
     for (let i = 0; i < numbers.length - 1; i++;) {
@@ -44,4 +62,17 @@ function displayEvenNumbers() {
         return evenNumbers;
     }
 }
-displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]*/
+
+function displayEvenNumbers() {
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    let evenNumbers = [];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0){
+            evenNumbers.push(numbers[i]);
+        }
+    }
+    return evenNumbers;
+}
+console.log(displayEvenNumbers()); // dovrebbe restituire [2,4,6,8]
+
